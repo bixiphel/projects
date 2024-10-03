@@ -1,18 +1,3 @@
-## Getting Started
+The Collatz Conjecture (also called the "3n + 1" problem) states that given any positive integer, a sequence of operations will eventually converge to the number 1. The two operations are given by: if an integer is even, the next number in the sequence is half of the original. If it is odd, the next number is one more than 3 times the original number. It is a famously unsolved problem, with computers checking numbers with starting values up to around 2.95 * 10^20, or 2^68. In layman's terms, the conjecture seems to hold for all positive integers. 
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
-
-## Folder Structure
-
-The workspace contains two folders by default, where:
-
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+A basic way to obtain the sequence a starting value generates is to directly program the rules, which was the original approach to programming this function. The test data set used is a set unsorted list of 50000 randomly generated and unique integers ranging from 1-100000. Over 10 trials on the same unaltered set, the naïve implementation took on average 975 ms (.975 seconds), which time aside, is a starting benchmark for optimization/improvements. 
